@@ -1,0 +1,30 @@
+:root {
+    --unit: 1px;
+    --value-count: 20;
+    --value-size: 40; 
+    --size-cell: calc(var(--unit) * var(--value-size));
+    --mult-size: calc(var(--value-count) * var(--size-cell));
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    border: 3px solid #fff;
+    width: var(--mult-size);
+    height: var(--mult-size);
+}
+
+.game div {
+    width: var(--size-cell);
+    height: var(--size-cell);
+}
