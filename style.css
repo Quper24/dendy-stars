@@ -1,7 +1,7 @@
 :root {
     --unit: 1px;
     --value-count: 20;
-    --value-size: 40; 
+    --value-size: 40;
     --size-cell: calc(var(--unit) * var(--value-size));
     --mult-size: calc(var(--value-count) * var(--size-cell));
 }
