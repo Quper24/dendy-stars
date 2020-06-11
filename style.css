@@ -28,3 +28,13 @@ body {
     width: var(--size-cell);
     height: var(--size-cell);
 }
+
+.enemy {
+    background-color: red;
+    border-radius: calc(var(--value-count) * var(--unit));
+}
+
+.player {
+    background-color: greenyellow;
+    border-radius: 50% 50% 50% 50% / 100% 100% 0 0;
+}
